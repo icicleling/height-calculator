@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>身高计算器</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">请输入你的身高</h1>
+      <div class="input-box"><input id="height-input" type="text" />CM</div>
+      <button class="submit-btn" id="submit-btn">开始计算</button>
+    </main>
+
+    <div class="modal" id="modal">
+      <div class="modal__mask"></div>
+      <div class="modal__body">
+        <div class="modal__close">关闭</div>
+        <div>你的身高是<span id="modal-value"></span>CM!</div>
+      </div>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
