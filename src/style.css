@@ -1,0 +1,70 @@
+/* 
+  配色 https://colorhunt.co/palette/213416
+ */
+:root {
+  --bg-color: #fff8cd;
+  --base-color: #ffe05d;
+  --highlight-color: #ff9642;
+  --text-color: #646464;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.title {
+  color: var(--text-color);
+}
+
+.input-box {
+  margin-top: 40px;
+}
+
+.submit-btn {
+  margin-top: 40px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal__mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__body {
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+  right: 15%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+}
