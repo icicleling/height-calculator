@@ -1,10 +1,11 @@
 /* 
-  配色 https://colorhunt.co/palette/213416
+  配色 https://colorhunt.co/palette/220004
  */
 :root {
-  --bg-color: #fff8cd;
-  --base-color: #ffe05d;
-  --highlight-color: #ff9642;
+  --bg-color: #fbf6f0;
+  --base-color: #ffda77;
+  --highlight-color: #ffa45b;
+  --info-color: #aee6e6;
   --text-color: #646464;
 }
 html,
