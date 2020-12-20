@@ -6,18 +6,25 @@
     <title>身高计算器</title>
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body>
+  <body class="container">
     <main>
       <h1 class="title">请输入你的身高</h1>
-      <div class="input-box"><input id="height-input" type="text" />CM</div>
-      <button class="submit-btn" id="submit-btn">开始计算</button>
+      <div class="input-box">
+        <input id="height-input" type="text" class="input-box__input" />
+        <span class="input-box__unit">CM</span>
+      </div>
     </main>
+    <footer>
+      <button class="submit-btn" id="submit-btn">开始计算</button>
+    </footer>
 
     <div class="modal" id="modal">
       <div class="modal__mask"></div>
       <div class="modal__body">
-        <div class="modal__close">关闭</div>
-        <div>你的身高是<span id="modal-value"></span>CM!</div>
+        <div class="modal__close">×</div>
+        <div class="modal__content">
+          你的身高是<span id="modal-value"></span>CM!
+        </div>
       </div>
     </div>
 
