@@ -16,7 +16,8 @@
 }
 
 html,
-body {
+body,
+#root {
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -27,6 +28,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 main {
