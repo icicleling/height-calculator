@@ -1,18 +1,6 @@
-const inputEl = document.querySelector('#height-input');
-const buttonEl = document.querySelector('#submit-btn');
-const modalEl = document.querySelector('#modal');
-const modalValueEl = document.querySelector('#modal-value');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app';
 
-buttonEl.addEventListener('click', () => {
-    const inputValue = inputEl.value;
-    modalValueEl.innerHTML = inputValue;
-    modalEl.style.display = 'block';
-})
-
-modalEl.addEventListener('click', (e) => {
-    if (e.target.className !== 'modal__close') {
-        return;
-    }
-
-    modalEl.style.display = 'none';
-})
+ReactDOM.render(<App />, document.querySelector('#root'));
+module.hot.accept();
