@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './style.css';
 
 const App = () => {
@@ -20,19 +20,27 @@ const App = () => {
         </div>
       </main>
       <footer>
-        <button className="submit-btn" onClick={() => setIsModalHidden(false)}>
+        <button className="submit-btn" type="button" onClick={() => setIsModalHidden(false)}>
           开始计算
         </button>
       </footer>
 
       <div className="modal" hidden={isModalHidden}>
-        <div className="modal__mask"></div>
+        <div className="modal__mask" />
         <div className="modal__body">
-          <div className="modal__close" onClick={() => setIsModalHidden(true)}>
+          <div
+            className="modal__close"
+            role="button"
+            tabIndex={0}
+            onClick={() => setIsModalHidden(true)}
+            onKeyDown={() => setIsModalHidden(true)}
+          >
             ×
           </div>
           <div className="modal__content">
-            你的身高是<span id="modal-value">{inputValue}</span>CM!
+            你的身高是
+            <span id="modal-value">{inputValue}</span>
+            CM!
           </div>
         </div>
       </div>
