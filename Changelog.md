@@ -1,5 +1,9 @@
 # 更新日志
 
+## 0.3.2
+
+- 增加插件 eslint-webpack-plugin
+
 ## 0.3.1
 
 - 增加 eslint 配置
